@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Sanskriti Canvas</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-landmark"></i>
+            </div>
+
+            <div class="logo-text">
+                <span>Sanskriti</span>
+                <span class="orange">Canvas</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Discover</a>
+            <a href="#">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <button class="explore-btn">
+            Start Exploring
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= CONTACT HERO ================= -->
+
+    <section class="contact-hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">GET IN TOUCH</p>
+
+            <h1>
+                Let's Connect &<br>
+                <span>Celebrate India</span>
+            </h1>
+
+            <p class="hero-description">
+                Have a question, suggestion, or cultural story to share?
+                We'd love to hear from you. Connect with Sanskriti Canvas
+                and help us celebrate India's rich heritage.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <p class="section-label">CONTACT US</p>
+
+                <h2>
+                    We'd love to<br>
+                    <span>hear from you.</span>
+                </h2>
+
+                <p class="info-description">
+                    Whether you want to share a story, collaborate with us,
+                    provide feedback, or simply say hello, feel free to
+                    reach out.
+                </p>
+
+
+                <!-- Email -->
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@sanskriticanvas.com</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>India</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Social Media -->
+
+                <div class="social-section">
+
+                    <h3>Follow us</h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="contact-form-box">
+
+                <h2>Send us a message</h2>
+
+                <p>
+                    Fill out the form below and we'll get back to you soon.
+                </p>
+
+                <form id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="What would you like to talk about?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="send-btn">
+
+                        Send Message
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+                <div id="successMessage" class="success-message">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Thank you! Your message has been sent successfully.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="faq-section">
+
+        <p class="section-label">FAQ</p>
+
+        <h2>
+            Frequently Asked <span>Questions</span>
+        </h2>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I contribute a cultural story?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        You can contact us through the form above and
+                        share your story, photographs, artwork, or
+                        information about Indian culture.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I collaborate with Sanskriti Canvas?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. We welcome collaborations with artists,
+                        researchers, creators, cultural organizations,
+                        and communities.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I report incorrect information?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Please send us the details through our contact
+                        form. Our team will review the information.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How quickly will you respond?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        We usually try to respond to messages within
+                        2–3 business days.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <div class="footer-logo-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <h2>
+                        Sanskriti
+                        <span>Canvas</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    A digital canvas celebrating India's rich cultural
+                    heritage, traditions, stories and artistic expressions.
+                </p>
+
+
+                <div class="footer-social">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Explore -->
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="#">Heritage</a>
+                <a href="#">Art & Craft</a>
+                <a href="#">Festivals</a>
+                <a href="#">Traditions</a>
+
+            </div>
+
+
+            <!-- Discover -->
+
+            <div class="footer-column">
+
+                <h3>Discover</h3>
+
+                <a href="#">History</a>
+                <a href="#">Regions</a>
+                <a href="#">Stories</a>
+                <a href="#">Gallery</a>
+
+            </div>
+
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h3>Company</h3>
+
+                <a href="#">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">FAQ</a>
+                <a href="#">Feedback</a>
+
+            </div>
+
+
+            <!-- Legal -->
+
+            <div class="footer-column">
+
+                <h3>Legal</h3>
+
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookies</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Sanskriti Canvas. All rights reserved.
+            </p>
+
+            <p>
+                Made with
+                <span class="heart">♥</span>
+                for India's heritage.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
