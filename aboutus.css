@@ -1,0 +1,890 @@
+/* ============================================
+   SANSKRITI CANVAS
+   ABOUT US PAGE
+============================================ */
+
+
+/* ============================================
+   ABOUT HERO
+============================================ */
+
+.about-hero {
+    position: relative;
+    padding: 110px 0 120px;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(154, 77, 25, 0.08),
+            transparent 30%
+        ),
+        var(--cream);
+}
+
+.about-hero-pattern {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 1px solid rgba(154, 77, 25, 0.08);
+    border-radius: 50%;
+    right: -220px;
+    top: -250px;
+}
+
+.about-hero-pattern::before,
+.about-hero-pattern::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(154, 77, 25, 0.06);
+    border-radius: 50%;
+}
+
+.about-hero-pattern::before {
+    inset: 70px;
+}
+
+.about-hero-pattern::after {
+    inset: 140px;
+}
+
+.about-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 0.98;
+    font-weight: 600;
+    margin: 20px 0 25px;
+    color: var(--black);
+    max-width: 650px;
+}
+
+.about-hero h1 span {
+    display: block;
+    color: var(--primary);
+    font-style: italic;
+}
+
+.about-hero p {
+    max-width: 570px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.about-hero-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.about-hero-image {
+    position: relative;
+    margin-left: 40px;
+    transform: rotate(2deg);
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-image-caption {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    background: rgba(33, 25, 19, 0.92);
+    color: var(--white);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-image-caption span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    color: var(--primary-light);
+}
+
+.hero-image-caption p {
+    color: var(--white);
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* ============================================
+   STORY
+============================================ */
+
+.about-story {
+    background: var(--white);
+    padding: 120px 0;
+}
+
+.story-images {
+    position: relative;
+    min-height: 590px;
+}
+
+.story-image-main {
+    width: 76%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.story-image-main img,
+.story-image-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-image-small {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    height: 280px;
+    border: 12px solid var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.story-number {
+    position: absolute;
+    left: -30px;
+    bottom: 50px;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 8px solid var(--white);
+}
+
+.story-number strong {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+}
+
+.story-number span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.story-content {
+    padding-left: 40px;
+}
+
+.story-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(40px, 5vw, 58px);
+    line-height: 1;
+    font-weight: 600;
+    margin: 18px 0 25px;
+}
+
+.story-content h2 span {
+    display: block;
+    color: var(--primary);
+    font-style: italic;
+}
+
+.story-content p {
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+
+/* ============================================
+   VISION
+============================================ */
+
+.about-vision {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.vision-box {
+    position: relative;
+    overflow: hidden;
+    background: var(--primary);
+    padding: 75px;
+    color: var(--white);
+}
+
+.vision-decoration {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    right: -170px;
+    top: -220px;
+}
+
+.vision-decoration::before,
+.vision-decoration::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+
+.vision-decoration::before {
+    inset: 60px;
+}
+
+.vision-decoration::after {
+    inset: 120px;
+}
+
+.vision-box .section-tag {
+    color: rgba(255,255,255,0.7);
+}
+
+.vision-box h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 5vw, 62px);
+    line-height: 1;
+    margin: 18px 0 22px;
+}
+
+.vision-box h2 span {
+    font-style: italic;
+}
+
+.vision-box p {
+    max-width: 650px;
+    line-height: 1.9;
+    color: rgba(255,255,255,0.8);
+}
+
+.vision-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.vision-icon {
+    min-height: 125px;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.vision-icon i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.vision-icon span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vision-icon:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-5px);
+}
+
+
+/* ============================================
+   CULTURE CARDS
+============================================ */
+
+.about-explore {
+    padding: 120px 0;
+    background: var(--white);
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: auto;
+}
+
+.section-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 5vw, 58px);
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.section-heading h2 span {
+    color: var(--primary);
+    font-style: italic;
+}
+
+.section-heading p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.culture-card {
+    position: relative;
+    height: 100%;
+    padding: 38px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.culture-card::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid rgba(154,77,25,0.08);
+    right: -50px;
+    bottom: -50px;
+}
+
+.culture-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(154,77,25,0.25);
+}
+
+.culture-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 23px;
+    margin-bottom: 25px;
+    transition: var(--transition);
+}
+
+.culture-card:hover .culture-icon {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+.culture-card > span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+.culture-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    margin: 8px 0 12px;
+}
+
+.culture-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 75px;
+}
+
+.culture-card a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.culture-card a i {
+    margin-left: 8px;
+    transition: var(--transition);
+}
+
+.culture-card a:hover i {
+    margin-left: 14px;
+}
+
+
+/* ============================================
+   JOURNEY
+============================================ */
+
+.about-journey {
+    padding: 120px 0;
+    background: var(--cream);
+}
+
+.journey-line {
+    width: 75%;
+    height: 1px;
+    background: var(--border);
+    margin: 60px auto -85px;
+}
+
+.journey-step {
+    position: relative;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.journey-number {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.journey-step > i {
+    font-size: 25px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.journey-step h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+}
+
+.journey-step p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ============================================
+   MISSION
+============================================ */
+
+.about-mission {
+    padding: 120px 0;
+    background: var(--white);
+}
+
+.mission-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.mission-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.05;
+    margin: 20px 0 25px;
+}
+
+.mission-content h2 span {
+    color: var(--primary);
+    font-style: italic;
+}
+
+.mission-content > p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.mission-quote {
+    margin-top: 60px;
+    padding-top: 45px;
+    border-top: 1px solid var(--border);
+}
+
+.mission-quote i {
+    font-size: 28px;
+    color: var(--primary);
+}
+
+.mission-quote blockquote {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    font-style: italic;
+    margin: 18px auto 8px;
+}
+
+.mission-quote span {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* ============================================
+   TEAM / STUDENT SECTION
+============================================ */
+
+.about-team {
+    padding: 120px 0;
+    background: var(--cream);
+}
+
+.about-team h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 5vw, 60px);
+    line-height: 1;
+    margin: 18px 0 25px;
+}
+
+.about-team h2 span {
+    display: block;
+    color: var(--primary);
+    font-style: italic;
+}
+
+.about-team p {
+    max-width: 580px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.about-team .btn {
+    margin-top: 15px;
+}
+
+.team-art {
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-circle {
+    position: absolute;
+    border: 1px solid rgba(154,77,25,0.25);
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 400px;
+    height: 400px;
+}
+
+.circle-two {
+    width: 300px;
+    height: 300px;
+}
+
+.team-center {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--shadow-lg);
+}
+
+.team-center i {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.team-center h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.team-center span {
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+
+/* ============================================
+   FINAL CTA
+============================================ */
+
+.about-final-cta {
+    padding: 100px 0;
+    background: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-final-cta::before,
+.about-final-cta::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+}
+
+.about-final-cta::before {
+    width: 500px;
+    height: 500px;
+    left: -250px;
+    top: -250px;
+}
+
+.about-final-cta::after {
+    width: 400px;
+    height: 400px;
+    right: -200px;
+    bottom: -220px;
+}
+
+.final-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.final-cta-content .section-tag {
+    color: rgba(255,255,255,0.7);
+}
+
+.final-cta-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--white);
+    font-size: clamp(45px, 6vw, 70px);
+    line-height: 1;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.final-cta-content h2 span {
+    display: block;
+    font-style: italic;
+}
+
+.final-cta-content p {
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 30px;
+}
+
+
+/* ============================================
+   REVEAL ANIMATION
+============================================ */
+
+.about-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease,
+                transform 0.8s ease;
+}
+
+.about-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 991px) {
+
+    .about-hero {
+        padding: 80px 0;
+    }
+
+    .about-hero-image {
+        margin: 60px 0 0;
+    }
+
+    .about-hero-image img {
+        height: 500px;
+    }
+
+    .story-content {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .vision-box {
+        padding: 55px 40px;
+    }
+
+    .journey-line {
+        display: none;
+    }
+
+    .journey-step {
+        margin-bottom: 30px;
+    }
+
+    .team-art {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .about-hero {
+        padding: 70px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 52px;
+    }
+
+    .about-hero-image img {
+        height: 400px;
+    }
+
+    .about-story,
+    .about-explore,
+    .about-journey,
+    .about-mission,
+    .about-team {
+        padding: 80px 0;
+    }
+
+    .story-images {
+        min-height: 460px;
+    }
+
+    .story-image-main {
+        height: 400px;
+        width: 82%;
+    }
+
+    .story-image-small {
+        height: 220px;
+        width: 48%;
+    }
+
+    .story-number {
+        left: -10px;
+        width: 115px;
+        height: 115px;
+    }
+
+    .story-number strong {
+        font-size: 24px;
+    }
+
+    .vision-box {
+        padding: 45px 25px;
+    }
+
+    .vision-icon-grid {
+        margin-top: 40px;
+    }
+
+    .team-art {
+        height: 350px;
+    }
+
+    .circle-one {
+        width: 320px;
+        height: 320px;
+    }
+
+    .circle-two {
+        width: 250px;
+        height: 250px;
+    }
+
+    .team-center {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about-final-cta {
+        padding: 80px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .about-hero h1 {
+        font-size: 44px;
+    }
+
+    .about-hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-hero-buttons .btn {
+        width: 100%;
+    }
+
+    .story-images {
+        min-height: 380px;
+    }
+
+    .story-image-main {
+        height: 330px;
+    }
+
+    .story-image-small {
+        height: 170px;
+    }
+
+    .story-number {
+        width: 100px;
+        height: 100px;
+    }
+
+    .vision-icon {
+        min-height: 100px;
+    }
+
+    .culture-card {
+        padding: 30px;
+    }
+
+    .mission-quote blockquote {
+        font-size: 25px;
+    }
+
+    .team-art {
+        height: 300px;
+    }
+
+    .circle-one {
+        width: 270px;
+        height: 270px;
+    }
+
+    .circle-two {
+        width: 210px;
+        height: 210px;
+    }
+
+    .team-center {
+        width: 140px;
+        height: 140px;
+    }
+
+    .team-center i {
+        font-size: 30px;
+    }
+
+    .team-center h3 {
+        font-size: 25px;
+    }
+}

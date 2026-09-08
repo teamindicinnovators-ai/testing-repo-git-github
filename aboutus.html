@@ -3,102 +3,936 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>About Us | Sanskriti Canvas</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Existing Global CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- About Page CSS -->
+    <link rel="stylesheet" href="aboutus.css">
 </head>
+
 <body>
-    <header class="site-header">
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+<!-- ================= NAVBAR ================= -->
 
-                <!-- Logo -->
-                <a class="navbar-brand brand-logo" href="index.html">
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
 
-                    <span class="brand-icon">
-                        <i class="fa-solid fa-landmark"></i>
-                    </span>
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">
+                    <i class="fa-solid fa-landmark"></i>
+                </span>
+                <span>Sanskriti Canvas</span>
+            </a>
 
-                    <span class="brand-text">
-                        Sanskriti <strong>Canvas</strong>
-                    </span>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-                </a>
+            <div class="collapse navbar-collapse" id="mainNavbar">
 
-                <!-- Mobile Toggle -->
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <ul class="navbar-nav mx-auto">
 
-                    <i class="fa-solid fa-bars"></i>
-
-                </button>
-
-                <!-- Navigation -->
-                <div class="collapse navbar-collapse" id="mainNavbar">
-
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                Home
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Heritage
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">
-                                About
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Festivals
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                History
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Explore
-                            </a>
-                        </li>
-
-                    </ul>
-
-                    <div class="nav-actions">
-
-                        <button class="nav-search-btn" type="button">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-
-                        <a href="#" class="btn btn-primary-custom">
-                            Discover
-                            <i class="fa-solid fa-arrow-right"></i>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
                         </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Heritage
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutus.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Festivals
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            History
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Explore
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button class="nav-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <a href="#" class="btn btn-primary-custom">
+                        Discover
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- ================= ABOUT HERO ================= -->
+
+<section class="about-hero">
+
+    <div class="about-hero-pattern"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">
+                    ABOUT SANSKRITI CANVAS
+                </span>
+
+                <h1>
+                    A digital canvas for
+                    <span>India's living heritage.</span>
+                </h1>
+
+                <p>
+                    Sanskriti Canvas is a digital platform created to bring
+                    India's rich heritage, traditions, art, festivals and
+                    cultural stories together in one beautiful space.
+                </p>
+
+                <div class="about-hero-buttons">
+
+                    <a href="#our-story" class="btn btn-primary-custom">
+                        Our Story
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                    <a href="#our-mission" class="btn btn-outline-custom">
+                        Our Mission
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="about-hero-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1000&q=85"
+                        alt="Indian Heritage"
+                    >
+
+                    <div class="hero-image-caption">
+                        <span>01</span>
+                        <p>India — A story of thousands of years</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OUR STORY ================= -->
+
+<section class="about-story" id="our-story">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="story-images">
+
+                    <div class="story-image-main">
+                        <img
+                            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=85"
+                            alt="Indian Culture"
+                        >
+                    </div>
+
+                    <div class="story-image-small">
+                        <img
+                            src="https://images.unsplash.com/photo-1600100397608-f0109d0b2e6f?auto=format&fit=crop&w=700&q=85"
+                            alt="Indian Heritage Art"
+                        >
+                    </div>
+
+                    <div class="story-number">
+                        <strong>5000+</strong>
+                        <span>Years of Heritage</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="story-content">
+
+                    <span class="section-tag">
+                        OUR STORY
+                    </span>
+
+                    <h2>
+                        Preserving the past.
+                        <span>Inspiring the future.</span>
+                    </h2>
+
+                    <p>
+                        India is home to one of the world's oldest and most
+                        diverse civilizations. From magnificent monuments and
+                        ancient temples to folk traditions, crafts, food and
+                        festivals, every region has a story waiting to be
+                        discovered.
+                    </p>
+
+                    <p>
+                        Yet, discovering this enormous cultural wealth can
+                        often be difficult. Sanskriti Canvas was imagined to
+                        make cultural exploration simpler, more engaging and
+                        accessible through a modern digital experience.
+                    </p>
+
+                    <p>
+                        Our platform connects people with India's heritage
+                        through interactive exploration, curated stories and
+                        meaningful cultural experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VISION ================= -->
+
+<section class="about-vision">
+
+    <div class="container">
+
+        <div class="vision-box">
+
+            <div class="vision-decoration"></div>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <span class="section-tag">
+                        OUR VISION
+                    </span>
+
+                    <h2>
+                        One platform.
+                        <span>Infinite stories.</span>
+                    </h2>
+
+                    <p>
+                        We envision a digital India where anyone can explore
+                        the country's heritage and culture — from a famous
+                        monument to a small local tradition — through one
+                        connected cultural experience.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="vision-icon-grid">
+
+                        <div class="vision-icon">
+                            <i class="fa-solid fa-landmark"></i>
+                            <span>Heritage</span>
+                        </div>
+
+                        <div class="vision-icon">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Art</span>
+                        </div>
+
+                        <div class="vision-icon">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Traditions</span>
+                        </div>
+
+                        <div class="vision-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>Food</span>
+                        </div>
 
                     </div>
 
                 </div>
 
             </div>
-        </nav>
 
-    </header>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHAT WE EXPLORE ================= -->
+
+<section class="about-explore">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-tag">
+                WHAT WE EXPLORE
+            </span>
+
+            <h2>
+                India's culture,
+                <span>in every form.</span>
+            </h2>
+
+            <p>
+                Discover the many layers that make India's cultural identity
+                so extraordinary.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+            <!-- Heritage -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="culture-card">
+
+                    <div class="culture-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <span>01</span>
+
+                    <h3>Heritage</h3>
+
+                    <p>
+                        Explore ancient monuments, forts, temples, stepwells
+                        and architectural wonders.
+                    </p>
+
+                    <a href="#">
+                        Explore Heritage
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Art -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="culture-card">
+
+                    <div class="culture-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+
+                    <span>02</span>
+
+                    <h3>Art & Craft</h3>
+
+                    <p>
+                        Discover traditional paintings, handicrafts, textiles
+                        and artistic expressions.
+                    </p>
+
+                    <a href="#">
+                        Discover Art
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Traditions -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="culture-card">
+
+                    <div class="culture-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <span>03</span>
+
+                    <h3>Traditions</h3>
+
+                    <p>
+                        Learn about customs, rituals and traditions passed
+                        through generations.
+                    </p>
+
+                    <a href="#">
+                        Explore Traditions
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Festivals -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="culture-card">
+
+                    <div class="culture-icon">
+                        <i class="fa-solid fa-star-and-crescent"></i>
+                    </div>
+
+                    <span>04</span>
+
+                    <h3>Festivals</h3>
+
+                    <p>
+                        Experience India's vibrant festivals and celebrations
+                        from every region.
+                    </p>
+
+                    <a href="#">
+                        Explore Festivals
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- History -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="culture-card">
+
+                    <div class="culture-icon">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+
+                    <span>05</span>
+
+                    <h3>History</h3>
+
+                    <p>
+                        Travel through centuries of stories, civilizations,
+                        rulers and historical events.
+                    </p>
+
+                    <a href="#">
+                        Explore History
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Regional Stories -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="culture-card">
+
+                    <div class="culture-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+
+                    <span>06</span>
+
+                    <h3>Regional Stories</h3>
+
+                    <p>
+                        Discover the unique cultural identity of India's
+                        states, districts and local communities.
+                    </p>
+
+                    <a href="#">
+                        Explore Regions
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section class="about-journey">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-tag">
+                THE SANSKRITI JOURNEY
+            </span>
+
+            <h2>
+                From curiosity to
+                <span>connection.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="journey-line"></div>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+
+                <div class="journey-step">
+
+                    <div class="journey-number">
+                        01
+                    </div>
+
+                    <i class="fa-solid fa-compass"></i>
+
+                    <h3>Discover</h3>
+
+                    <p>
+                        Find a place, culture or tradition that catches your
+                        curiosity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="journey-step">
+
+                    <div class="journey-number">
+                        02
+                    </div>
+
+                    <i class="fa-solid fa-map"></i>
+
+                    <h3>Explore</h3>
+
+                    <p>
+                        Navigate through India's states, districts and
+                        cultural landscapes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="journey-step">
+
+                    <div class="journey-number">
+                        03
+                    </div>
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h3>Learn</h3>
+
+                    <p>
+                        Understand the history and stories behind every
+                        cultural experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="journey-step">
+
+                    <div class="journey-number">
+                        04
+                    </div>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>Connect</h3>
+
+                    <p>
+                        Build a deeper connection with India's cultural
+                        identity.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MISSION ================= -->
+
+<section class="about-mission" id="our-mission">
+
+    <div class="container">
+
+        <div class="mission-content text-center">
+
+            <span class="section-tag">
+                OUR MISSION
+            </span>
+
+            <h2>
+                Culture should not just be
+                <span>preserved.</span>
+                <br>
+                It should be experienced.
+            </h2>
+
+            <p>
+                Sanskriti Canvas aims to make India's cultural heritage
+                easier to discover, understand and appreciate — especially
+                for the next generation.
+            </p>
+
+            <div class="mission-quote">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <blockquote>
+                    "A nation's culture resides in the hearts and in the soul
+                    of its people."
+                </blockquote>
+
+                <span>— Mahatma Gandhi</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TEAM ================= -->
+
+<section class="about-team">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">
+                    BUILT WITH PURPOSE
+                </span>
+
+                <h2>
+                    Built by students.
+                    <span>Inspired by India.</span>
+                </h2>
+
+                <p>
+                    Sanskriti Canvas is a student-driven project created with
+                    a simple belief: technology can help preserve and
+                    celebrate culture in meaningful ways.
+                </p>
+
+                <p>
+                    By combining modern web technology with India's timeless
+                    cultural identity, we want to create an experience that
+                    feels both familiar and future-ready.
+                </p>
+
+                <a href="#" class="btn btn-primary-custom">
+                    Explore Sanskriti Canvas
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="team-art">
+
+                    <div class="team-circle circle-one"></div>
+                    <div class="team-circle circle-two"></div>
+
+                    <div class="team-center">
+
+                        <i class="fa-solid fa-landmark"></i>
+
+                        <h3>
+                            Sanskriti
+                        </h3>
+
+                        <span>
+                            CANVAS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL CTA ================= -->
+
+<section class="about-final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-content text-center">
+
+            <span class="section-tag">
+                BEGIN YOUR JOURNEY
+            </span>
+
+            <h2>
+                There is a story
+                <span>waiting to be discovered.</span>
+            </h2>
+
+            <p>
+                Explore India's heritage, culture and traditions with
+                Sanskriti Canvas.
+            </p>
+
+            <a href="index.html" class="btn btn-light-custom">
+                Start Exploring
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <div class="col-lg-4">
+
+                <a href="index.html" class="footer-brand">
+
+                    <span class="brand-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </span>
+
+                    <span>Sanskriti Canvas</span>
+
+                </a>
+
+                <p class="footer-description">
+                    Discover India's heritage, culture and traditions through
+                    stories that connect the past with the present.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>Explore</h5>
+
+                <ul>
+                    <li><a href="#">Heritage</a></li>
+                    <li><a href="#">Festivals</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Art & Craft</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>Discover</h5>
+
+                <ul>
+                    <li><a href="#">States</a></li>
+                    <li><a href="#">Districts</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Traditions</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>Company</h5>
+
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>Legal</h5>
+
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                Sanskriti Canvas. All rights reserved.
+            </p>
+
+            <p>
+                Made with <i class="fa-solid fa-heart"></i> for India
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Existing JS -->
+<script src="script.js"></script>
+
+<!-- About Page JS -->
+<script src="aboutus.js"></script>
+
 </body>
 </html>
